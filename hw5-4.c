@@ -15,12 +15,9 @@ int main()
         output = hangle - mangle;
     }
     if (output > 180){
-        output = output - 180;
+        output = 360 - output;
     }
-    else if (output < 0){
-        output = output + 180;
-    }
+
     printf("%0.3f" , output);
 
 }
-
